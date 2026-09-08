@@ -139,30 +139,8 @@ export const Navigation: React.FC = () => {
           </div>
         </div>
 
-        {/* Center Pill Tabs (Desktop) */}
-        <nav className="hidden lg:flex items-center space-x-1 bg-stone-100 p-1 rounded-xl border border-stone-200/80">
-          {navItems.slice(0, 5).map(item => {
-            const Icon = item.icon;
-            const isActive = currentView === item.view;
-            return (
-              <button
-                key={item.view}
-                onClick={() => setCurrentView(item.view)}
-                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition ${
-                  isActive 
-                    ? 'bg-white text-teal-900 shadow-xs' 
-                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/50'
-                }`}
-              >
-                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-teal-700' : 'text-stone-500'}`} />
-                <span>{item.label}</span>
-              </button>
-            );
-          })}
-        </nav>
-
-        {/* Right Actions */}
-        <div className="flex items-center space-x-3">
+        {/* Right Actions with spacious padding */}
+        <div className="flex items-center space-x-4 sm:space-x-6">
           {/* Language Selector */}
           <div className="flex items-center bg-stone-100 rounded-lg p-0.5 text-[11px] font-medium border border-stone-200">
             <button 
@@ -354,10 +332,10 @@ export const Navigation: React.FC = () => {
         </div>
       )}
 
-      {/* Primary Module Navigation Strip */}
+      {/* Primary Module Navigation Strip (Below Navigation Bar) */}
       {currentView !== 'landing' && (
-        <div className="bg-white border-b border-stone-200 px-4 sm:px-6 py-1.5 overflow-x-auto no-scrollbar">
-          <div className="flex items-center space-x-1.5 min-w-max">
+        <div className="bg-white border-b border-stone-200 px-4 sm:px-6 py-2 overflow-x-auto no-scrollbar">
+          <div className="flex items-center space-x-2.5 sm:space-x-3.5 min-w-max">
             {navItems.map(item => {
               const Icon = item.icon;
               const isActive = currentView === item.view;
@@ -365,9 +343,9 @@ export const Navigation: React.FC = () => {
                 <button
                   key={item.view}
                   onClick={() => setCurrentView(item.view)}
-                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition whitespace-nowrap ${
+                  className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-semibold transition whitespace-nowrap ${
                     isActive
-                      ? 'bg-teal-800 text-white shadow-xs'
+                      ? 'bg-teal-800 text-white shadow-xs ring-1 ring-teal-900/20'
                       : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
                   }`}
                 >
