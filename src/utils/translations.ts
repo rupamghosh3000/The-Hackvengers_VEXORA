@@ -1,0 +1,264 @@
+export type SupportedLanguage = 'en' | 'hi' | 'mr';
+
+export const translations: Record<SupportedLanguage, Record<string, string>> = {
+  en: {
+    // Brand & Header
+    'brand.title': 'EXPORTPILOT',
+    'brand.subtitle': 'From India-ready to Export-ready',
+    'header.selectConsignment': 'Select Consignment',
+    'header.newConsignment': 'New Consignment',
+    'header.notifications': 'Notifications',
+    'header.noUnread': 'No unread notifications',
+    'header.roleMSME': 'MSME Exporter',
+    'header.roleConsultant': 'Trade Consultant',
+    'header.roleCHA': 'Logistics & CHA',
+    'header.roleAdmin': 'DGFT Administrator',
+    'header.signOut': 'Sign Out',
+
+    // Nav Items
+    'nav.dashboard': 'Overview',
+    'nav.readiness': 'Readiness Score',
+    'nav.roadmap': '12-Step Roadmap',
+    'nav.documents': 'Smart Vault',
+    'nav.compliance': 'Product Compliance',
+    'nav.logistics': 'Logistics & CHA',
+    'nav.customs': 'ICEGATE Customs',
+    'nav.cost': 'Cost Estimator',
+    'nav.risk': 'Risk Radar',
+    'nav.copilot': 'AI Copilot',
+    'nav.role_management': 'Role Portal',
+
+    // Dashboard
+    'dash.title': 'Consignment Command Center',
+    'dash.subtitle': 'DGFT & Customs compliance radar for Indian MSME exporters',
+    'dash.exportReport': 'Export Report (CSV)',
+    'dash.initiateConsignment': 'Initiate Consignment',
+    'dash.activeConsignments': 'Active Consignments',
+    'dash.overallReadiness': 'Overall Readiness',
+    'dash.inTransit': 'In Transit / Logistics',
+    'dash.criticalAlerts': 'Critical Alerts',
+    'dash.readinessGauge': 'Export Readiness Gauge',
+    'dash.nextCriticalStep': 'Next Critical Step',
+    'dash.openRoadmap': 'Open 12-Step Roadmap',
+    'dash.liveVessel': 'Active Vessel Telemetry',
+    'dash.trackVessel': 'Track Live Vessel',
+    'dash.recentEvents': 'Recent Milestone Events',
+
+    // Document Vault
+    'vault.title': 'Smart Document Vault',
+    'vault.subtitle': 'Automated AI statutory inspection & ICEGATE compliance verification',
+    'vault.uploadBtn': 'Upload & Analyze Document',
+    'vault.manualEntryBtn': 'Manual Verification / Fallback',
+    'vault.syncMasterDocs': 'Sync Master Enterprise Docs',
+    'vault.allDocs': 'All Documents',
+    'vault.verified': 'Verified',
+    'vault.needsCorrection': 'Needs Correction',
+    'vault.underReview': 'Under Review',
+    'vault.docLinkingTitle': 'Document Linking & Consignment Tracking',
+    'vault.docLinkingDesc': 'Foundational master documents (IEC, GSTIN, Udyam, RCMC) are linked from your enterprise profile. Consignment-specific documents (Invoice, Packing List, BL) are mapped to this Consignment ID.',
+    'vault.simAiFailure': 'Simulate AI Outage (Test Manual Fallback)',
+
+    // Roadmap
+    'roadmap.title': 'Export Execution Roadmap',
+    'roadmap.subtitle': 'Personalized export compliance and logistics lifecycle',
+    'roadmap.phases': '12 PHASES',
+    'roadmap.cleared': 'Milestones Cleared',
+    'roadmap.markCompleted': 'Mark as Completed',
+    'roadmap.markInProgress': 'Mark In Progress',
+    'roadmap.requiredDocs': 'Required Docs',
+    'roadmap.askCopilot': 'Ask AI Copilot for Guidance',
+
+    // Copilot
+    'copilot.title': 'AI Export Copilot',
+    'copilot.subtitle': 'India MSME regulatory intelligence, DGFT schemes, and destination customs advisor',
+    'copilot.placeholder': 'Ask in English, Hindi (हिन्दी), or Marathi (मराठी)...',
+    'copilot.send': 'Send',
+    'copilot.thinking': 'AI Copilot is analyzing DGFT regulations and consignment ledger...',
+    'copilot.copy': 'Copy Response',
+    'copilot.copied': 'Copied!',
+    'copilot.suggested': 'Recommended Inquiries:',
+
+    // Common
+    'btn.cancel': 'Cancel',
+    'btn.save': 'Save Changes',
+    'btn.submit': 'Submit',
+    'btn.close': 'Close',
+    'btn.back': 'Back',
+    'status.loading': 'Synchronizing DGFT & Customs Ledger...'
+  },
+  hi: {
+    // Brand & Header
+    'brand.title': 'एक्सपोर्टपायलट',
+    'brand.subtitle': 'भारत-तैयार से वैश्विक निर्यात-तैयार',
+    'header.selectConsignment': 'खेप (कंसाइनमेंट) चुनें',
+    'header.newConsignment': 'नई खेप जोड़ें',
+    'header.notifications': 'सूचनाएं',
+    'header.noUnread': 'कोई नई सूचना नहीं है',
+    'header.roleMSME': 'एमएसएमई निर्यातक',
+    'header.roleConsultant': 'व्यापार सलाहकार',
+    'header.roleCHA': 'लॉजिस्टिक्स एवं सीएचए',
+    'header.roleAdmin': 'डीजीएफटी प्रशासक',
+    'header.signOut': 'लॉग आउट',
+
+    // Nav Items
+    'nav.dashboard': 'डैशबोर्ड अवलोकन',
+    'nav.readiness': 'निर्यात तत्परता',
+    'nav.roadmap': '12-चरणीय रोडमैप',
+    'nav.documents': 'स्मार्ट दस्तावेज़ वॉल्ट',
+    'nav.compliance': 'उत्पाद अनुपालन',
+    'nav.logistics': 'लॉजिस्टिक्स एवं सीएचए',
+    'nav.customs': 'आइसगेट कस्टम्स',
+    'nav.cost': 'लागत गणक',
+    'nav.risk': 'जोखिम रडार',
+    'nav.copilot': 'एआई कोपायलट',
+    'nav.role_management': 'भूमिका पोर्टल',
+
+    // Dashboard
+    'dash.title': 'निर्यात नियंत्रण केंद्र',
+    'dash.subtitle': 'भारतीय एमएसएमई निर्यातकों के लिए डीजीएफटी एवं कस्टम्स अनुपालन',
+    'dash.exportReport': 'रिपोर्ट डाउनलोड करें (CSV)',
+    'dash.initiateConsignment': 'नई खेप शुरू करें',
+    'dash.activeConsignments': 'सक्रिय खेपें',
+    'dash.overallReadiness': 'कुल निर्यात तत्परता',
+    'dash.inTransit': 'परिवहन में (शिपमेंट)',
+    'dash.criticalAlerts': 'महत्वपूर्ण चेतावनी',
+    'dash.readinessGauge': 'निर्यात तत्परता मीटर',
+    'dash.nextCriticalStep': 'अगला महत्वपूर्ण कदम',
+    'dash.openRoadmap': '12-चरणीय रोडमैप खोलें',
+    'dash.liveVessel': 'जहाज की लाइव स्थिति',
+    'dash.trackVessel': 'जहाज को ट्रैक करें',
+    'dash.recentEvents': 'हाल के महत्वपूर्ण पड़ाव',
+
+    // Document Vault
+    'vault.title': 'स्मार्ट दस्तावेज़ वॉल्ट',
+    'vault.subtitle': 'स्वचालित एआई वैधानिक निरीक्षण एवं आइसगेट अनुपालन सत्यापन',
+    'vault.uploadBtn': 'दस्तावेज़ अपलोड और जांचें',
+    'vault.manualEntryBtn': 'मैनुअल प्रविष्टि / बैकअप',
+    'vault.syncMasterDocs': 'मुख्य कंपनी दस्तावेज़ सिंक करें',
+    'vault.allDocs': 'सभी दस्तावेज़',
+    'vault.verified': 'सत्यापित (Verified)',
+    'vault.needsCorrection': 'सुधार आवश्यक',
+    'vault.underReview': 'समीक्षाधीन',
+    'vault.docLinkingTitle': 'दस्तावेज़ लिंकिंग एवं खेप ट्रैकिंग',
+    'vault.docLinkingDesc': 'मूल मास्टर दस्तावेज़ (आईईसी, जीएसटी, उद्यम, आरसीएमसी) आपकी कंपनी प्रोफाइल से जुड़े हैं। खेप-विशिष्ट दस्तावेज़ (चालान, पैकिंग सूची, बीएल) इस खेप आईडी से जुड़े हैं।',
+    'vault.simAiFailure': 'एआई विफलता सिमुलेशन (मैनुअल टेस्ट)',
+
+    // Roadmap
+    'roadmap.title': 'निर्यात निष्पादन रोडमैप',
+    'roadmap.subtitle': 'आपकी खेप के लिए व्यक्तिगत अनुपालन और लॉजिस्टिक्स चक्र',
+    'roadmap.phases': '12 चरण',
+    'roadmap.cleared': 'चरण पूरे हुए',
+    'roadmap.markCompleted': 'पूर्ण के रूप में चिह्नित करें',
+    'roadmap.markInProgress': 'प्रगति में चिह्नित करें',
+    'roadmap.requiredDocs': 'आवश्यक दस्तावेज़',
+    'roadmap.askCopilot': 'एआई कोपायलट से सलाह लें',
+
+    // Copilot
+    'copilot.title': 'एआई निर्यात कोपायलट',
+    'copilot.subtitle': 'भारतीय एमएसएमई नियम, डीजीएफटी योजनाएं, और गंतव्य सीमा शुल्क सलाहकार',
+    'copilot.placeholder': 'हिन्दी, मराठी या अंग्रेज़ी में अपना प्रश्न पूछें...',
+    'copilot.send': 'भेजें',
+    'copilot.thinking': 'कोपायलट डीजीएफटी नियमों और खेप विवरण का विश्लेषण कर रहा है...',
+    'copilot.copy': 'उत्तर कॉपी करें',
+    'copilot.copied': 'कॉपी हो गया!',
+    'copilot.suggested': 'सुझाए गए प्रश्न:',
+
+    // Common
+    'btn.cancel': 'रद्द करें',
+    'btn.save': 'परिवर्तन सहेजें',
+    'btn.submit': 'जमा करें',
+    'btn.close': 'बंद करें',
+    'btn.back': 'वापस जाएं',
+    'status.loading': 'डीजीएफटी और सीमा शुल्क डेटा सिंक हो रहा है...'
+  },
+  mr: {
+    // Brand & Header
+    'brand.title': 'एक्सपोर्टपायलट',
+    'brand.subtitle': 'भारतीय बाजारपेठेतून जागतिक निर्यातीकडे',
+    'header.selectConsignment': 'कंसाइनमेंट (खेप) निवडा',
+    'header.newConsignment': 'नवीन कंसाइनमेंट जोडा',
+    'header.notifications': 'सूचना',
+    'header.noUnread': 'कोणतीही नवीन सूचना नाही',
+    'header.roleMSME': 'एमएसएमई निर्यातदार',
+    'header.roleConsultant': 'व्यापार सल्लागार',
+    'header.roleCHA': 'लॉजिस्टिक्स आणि सीएचए',
+    'header.roleAdmin': 'डीजीएफटी प्रशासक',
+    'header.signOut': 'साइन आउट',
+
+    // Nav Items
+    'nav.dashboard': 'डॅशबोर्ड विहंगावलोकन',
+    'nav.readiness': 'निर्यात सज्जता',
+    'nav.roadmap': '12-टप्प्यांचा रोडमॅप',
+    'nav.documents': 'स्मार्ट कागदपत्र वॉल्ट',
+    'nav.compliance': 'उत्पादन अनुपालन',
+    'nav.logistics': 'लॉजिस्टिक्स आणि सीएचए',
+    'nav.customs': 'आईसगेट कस्टम्स',
+    'nav.cost': 'खर्च अंदाज गणक',
+    'nav.risk': 'जोखीम रडार',
+    'nav.copilot': 'एआय कोपायलट',
+    'nav.role_management': 'भूमिका पोर्टल',
+
+    // Dashboard
+    'dash.title': 'निर्यात नियंत्रण केंद्र',
+    'dash.subtitle': 'भारतीय एमएसएमई निर्यातदारांसाठी डीजीएफटी व सीमाशुल्क अनुपालन',
+    'dash.exportReport': 'अहवाल डाउनलोड करा (CSV)',
+    'dash.initiateConsignment': 'नवीन कंसाइनमेंट सुरू करा',
+    'dash.activeConsignments': 'सक्रिय कंसाइनमेंट्स',
+    'dash.overallReadiness': 'एकूण निर्यात सज्जता',
+    'dash.inTransit': 'वाहतुकीत (शिपमेंट)',
+    'dash.criticalAlerts': 'महत्त्वाच्या सूचना',
+    'dash.readinessGauge': 'निर्यात सज्जता मापक',
+    'dash.nextCriticalStep': 'पुढील महत्त्वाचा टप्पा',
+    'dash.openRoadmap': '12-टप्प्यांचा रोडमॅप उघडा',
+    'dash.liveVessel': 'जहाजाची थेट स्थिती',
+    'dash.trackVessel': 'थेट जहाज ट्रॅक करा',
+    'dash.recentEvents': 'नुकतेच पार पडलेले टप्पे',
+
+    // Document Vault
+    'vault.title': 'स्मार्ट कागदपत्र वॉल्ट',
+    'vault.subtitle': 'स्वयंचलित एआय वैधानिक तपासणी व आईसगेट सीमाशुल्क पडताळणी',
+    'vault.uploadBtn': 'कागदपत्र अपलोड आणि तपासा',
+    'vault.manualEntryBtn': 'मॅन्युअल नोंद / बॅकअप पर्याय',
+    'vault.syncMasterDocs': 'मुख्य कंपनी कागदपत्रे सिंक करा',
+    'vault.allDocs': 'सर्व कागदपत्रे',
+    'vault.verified': 'सत्यापित (Verified)',
+    'vault.needsCorrection': 'दुरुस्ती आवश्यक',
+    'vault.underReview': 'पुनरावलोकनाधीन',
+    'vault.docLinkingTitle': 'कागदपत्र लिंकिंग आणि कंसाइनमेंट ट्रॅकिंग',
+    'vault.docLinkingDesc': 'कंपनीची मुख्य कागदपत्रे (IEC, GSTIN, Udyam, RCMC) तुमच्या व्यवसाय प्रोफाइलशी जोडलेली आहेत. कंसाइनमेंट-विशिष्ट कागदपत्रे (इनव्हॉइस, पॅकिंग लिस्ट, BL) या कंसाइनमेंट क्रमांकाशी जोडली जातात.',
+    'vault.simAiFailure': 'एआय आउटेज सिम्युलेशन (मॅन्युअल टेस्ट)',
+
+    // Roadmap
+    'roadmap.title': 'निर्यात अंमलबजावणी रोडमॅप',
+    'roadmap.subtitle': 'आपल्या खेपेसाठी वैयक्तिकृत अनुपालन व लॉजिस्टिक्स जीवनचक्र',
+    'roadmap.phases': '12 टप्पे',
+    'roadmap.cleared': 'टप्पे पूर्ण झाले',
+    'roadmap.markCompleted': 'पूर्ण झाले म्हणून चिन्हांकित करा',
+    'roadmap.markInProgress': 'प्रगतीत म्हणून चिन्हांकित करा',
+    'roadmap.requiredDocs': 'आवश्यक कागदपत्रे',
+    'roadmap.askCopilot': 'एआय कोपायलटचा सल्ला घ्या',
+
+    // Copilot
+    'copilot.title': 'एआय निर्यात कोपायलट',
+    'copilot.subtitle': 'भारतीय एमएसएमई नियम, डीजीएफटी योजना आणि आयात सीमाशुल्क सल्लागार',
+    'copilot.placeholder': 'मराठी, हिन्दी किंवा इंग्रजीत प्रश्न विचारा...',
+    'copilot.send': 'पाठवा',
+    'copilot.thinking': 'कोपायलट डीजीएफटी नियम आणि कंसाइनमेंट लेजर तपासत आहे...',
+    'copilot.copy': 'उत्तर कॉपी करा',
+    'copilot.copied': 'कॉपी केले!',
+    'copilot.suggested': 'सुचवलेले प्रश्न:',
+
+    // Common
+    'btn.cancel': 'रद्द करा',
+    'btn.save': 'बदल जतन करा',
+    'btn.submit': 'प्रस्तुत करा',
+    'btn.close': 'बंद करा',
+    'btn.back': 'मागे जा',
+    'status.loading': 'डीजीएफटी आणि कस्टम्स लेजर सिंक होत आहे...'
+  }
+};
+
+export function getTranslation(lang: SupportedLanguage, key: string, fallback?: string): string {
+  const dictionary = translations[lang] || translations.en;
+  return dictionary[key] || translations.en[key] || fallback || key;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "ExportPilot AI",
+  "description": "From India-ready to Export-ready: Intelligent export readiness, compliance, document vault, and shipment execution platform for Indian MSMEs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
