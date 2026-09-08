@@ -91,12 +91,12 @@
       "buyerCompany": "Stark",
       "buyerContact": "trade@globalimporter.com",
       "buyerAddress": "Port Zone Warehouse",
-      "readinessScore": 55,
+      "readinessScore": 60,
       "riskLevel": "Medium",
       "status": "In Preparation",
       "targetShipmentDate": "2025-01-20",
       "createdAt": "2026-09-08T08:45:06.817Z",
-      "updatedAt": "2026-09-08T08:45:06.817Z"
+      "updatedAt": "2026-09-08T09:57:18.515Z"
     },
     {
       "id": "EXP-2025-0142",
@@ -729,6 +729,77 @@
         "analyzedAt": "2024-08-20T10:05:00Z",
         "disclaimer": "CLE Verified Certificate"
       }
+    },
+    {
+      "id": "doc-1788861438508",
+      "projectId": "EXP-2025-0791",
+      "type": "Commercial Invoice",
+      "fileName": "Commercial_Invoice_Manual_Record.pdf",
+      "fileSize": "Manual Entry",
+      "status": "Verified",
+      "expiryDate": "2025-12-31",
+      "referenceNumber": "INV/2024/3443",
+      "issuingAuthority": "Palghar Leather Works (Self-Certified)",
+      "declaredHsCode": "4202.21",
+      "declaredValue": "USD 35,000",
+      "uploadedBy": "Vikram Singhania (Manual)",
+      "uploadedAt": "2026-09-08T09:57:18.508Z",
+      "reviewerComments": "Manually inspected and verified against customs documentation rules.",
+      "verifiedAt": "2026-09-08T09:57:18.508Z",
+      "aiReview": {
+        "documentType": "Commercial Invoice",
+        "completenessScore": 95,
+        "detectedFields": [
+          {
+            "field": "Reference / Invoice Number",
+            "value": "INV/2024/3443",
+            "present": true
+          },
+          {
+            "field": "Issuing Authority / Agency",
+            "value": "Palghar Leather Works (Self-Certified)",
+            "present": true
+          },
+          {
+            "field": "HS Code Declared",
+            "value": "4202.21",
+            "present": true
+          },
+          {
+            "field": "Valuation & Terms",
+            "value": "USD 35,000",
+            "present": true
+          },
+          {
+            "field": "Exporter IEC & GSTIN Validated",
+            "value": "Manually Verified",
+            "present": true
+          },
+          {
+            "field": "Overseas Consignee Name & Port Matched",
+            "value": "Manually Verified",
+            "present": true
+          },
+          {
+            "field": "Incoterms & Currency Terms Specified",
+            "value": "Manually Verified",
+            "present": true
+          },
+          {
+            "field": "Accredited Testing / Origin Stamp Verified",
+            "value": "Manually Verified",
+            "present": true
+          }
+        ],
+        "missingFields": [],
+        "issues": [],
+        "explanation": "Document manually verified and recorded by exporter. Reference ID: INV/2024/3443.",
+        "recommendation": "Document verified for customs Let Export Order (LEO).",
+        "analyzedAt": "2026-09-08T09:57:18.508Z",
+        "disclaimer": "Manual verification entry — subject to statutory Indian Customs physical verification.",
+        "aiStatus": "manual_entry",
+        "isManualEntry": true
+      }
     }
   ],
   "shipments": [
@@ -935,6 +1006,15 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "log-1788861438518",
+      "projectId": "EXP-2025-0791",
+      "userId": "usr-1",
+      "userName": "Vikram Singhania",
+      "action": "Manual Document Entry Saved",
+      "description": "Recorded Commercial Invoice (Ref: INV/2024/3443) with status \"Verified\" via fallback mode.",
+      "timestamp": "2026-09-08T09:57:18.518Z"
+    },
     {
       "id": "log-1788857527815",
       "projectId": "EXP-2025-0142",

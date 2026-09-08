@@ -28,6 +28,34 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     'nav.copilot': 'AI Copilot',
     'nav.role_management': 'Role Portal',
 
+    // Direct Nav Aliases
+    'dashboard': 'Overview',
+    'readinessScore': 'Readiness Score',
+    'readiness': 'Readiness Score',
+    'roadmap': '12-Step Roadmap',
+    'documentVault': 'Smart Vault',
+    'documents': 'Smart Vault',
+    'logisticsCHA': 'Logistics & CHA',
+    'logistics': 'Logistics & CHA',
+    'costEstimator': 'Cost Estimator',
+    'cost': 'Cost Estimator',
+    'riskRadar': 'Risk Radar',
+    'risk': 'Risk Radar',
+    'copilot': 'AI Copilot',
+    'rolePortal': 'Role Portal',
+    'role_management': 'Role Portal',
+    'newConsignment': 'New Consignment',
+
+    // Landing Page
+    'landing.heroTitle': 'From India-ready to Export-ready',
+    'landing.heroSub': 'Intelligent export readiness, compliance, document vault, and shipment execution platform tailored specifically for Indian MSMEs.',
+    'landing.launchDemo': 'Launch Interactive Demo',
+    'landing.signIn': 'Sign In',
+    'landing.capabilities': 'Capabilities',
+    'landing.journey': '12-Step Journey',
+    'landing.compliance': 'EU & US Rules',
+    'landing.costSimulator': 'Cost Simulator',
+
     // Dashboard
     'dash.title': 'Consignment Command Center',
     'dash.subtitle': 'DGFT & Customs compliance radar for Indian MSME exporters',
@@ -112,6 +140,34 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     'nav.risk': 'जोखिम रडार',
     'nav.copilot': 'एआई कोपायलट',
     'nav.role_management': 'भूमिका पोर्टल',
+
+    // Direct Nav Aliases
+    'dashboard': 'डैशबोर्ड अवलोकन',
+    'readinessScore': 'निर्यात तत्परता',
+    'readiness': 'निर्यात तत्परता',
+    'roadmap': '12-चरणीय रोडमैप',
+    'documentVault': 'स्मार्ट दस्तावेज़ वॉल्ट',
+    'documents': 'स्मार्ट दस्तावेज़ वॉल्ट',
+    'logisticsCHA': 'लॉजिस्टिक्स एवं सीएचए',
+    'logistics': 'लॉजिस्टिक्स एवं सीएचए',
+    'costEstimator': 'लागत गणक',
+    'cost': 'लागत गणक',
+    'riskRadar': 'जोखिम रडार',
+    'risk': 'जोखिम रडार',
+    'copilot': 'एआई कोपायलट',
+    'rolePortal': 'भूमिका पोर्टल',
+    'role_management': 'भूमिका पोर्टल',
+    'newConsignment': 'नई खेप जोड़ें',
+
+    // Landing Page
+    'landing.heroTitle': 'भारत-तैयार से वैश्विक निर्यात-तैयार',
+    'landing.heroSub': 'भारतीय एमएसएमई के लिए स्वचालित निर्यात अनुपालन, दस्तावेज़ वॉल्ट और शिपमेंट निष्पादन मंच।',
+    'landing.launchDemo': 'डेमो शुरू करें',
+    'landing.signIn': 'साइन इन करें',
+    'landing.capabilities': 'क्षमताएं',
+    'landing.journey': '12-चरणीय यात्रा',
+    'landing.compliance': 'ईयू एवं यूएस नियम',
+    'landing.costSimulator': 'लागत सिम्युलेटर',
 
     // Dashboard
     'dash.title': 'निर्यात नियंत्रण केंद्र',
@@ -198,6 +254,34 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     'nav.copilot': 'एआय कोपायलट',
     'nav.role_management': 'भूमिका पोर्टल',
 
+    // Direct Nav Aliases
+    'dashboard': 'डॅशबोर्ड विहंगावलोकन',
+    'readinessScore': 'निर्यात सज्जता',
+    'readiness': 'निर्यात सज्जता',
+    'roadmap': '12-टप्प्यांचा रोडमॅप',
+    'documentVault': 'स्मार्ट कागदपत्र वॉल्ट',
+    'documents': 'स्मार्ट कागदपत्र वॉल्ट',
+    'logisticsCHA': 'लॉजिस्टिक्स आणि सीएचए',
+    'logistics': 'लॉजिस्टिक्स आणि सीएचए',
+    'costEstimator': 'खर्च अंदाज गणक',
+    'cost': 'खर्च अंदाज गणक',
+    'riskRadar': 'जोखीम रडार',
+    'risk': 'जोखीम रडार',
+    'copilot': 'एआय कोपायलट',
+    'rolePortal': 'भूमिका पोर्टल',
+    'role_management': 'भूमिका पोर्टल',
+    'newConsignment': 'नवीन कंसाइनमेंट जोडा',
+
+    // Landing Page
+    'landing.heroTitle': 'भारतीय बाजारपेठेतून जागतिक निर्यातीकडे',
+    'landing.heroSub': 'भारतीय एमएसएमईसाठी स्वयंचलित निर्यात अनुपालन, कागदपत्र वॉल्ट आणि शिपमेंट प्लॅटफॉर्म.',
+    'landing.launchDemo': 'डेमो सुरू करा',
+    'landing.signIn': 'साइन इन करा',
+    'landing.capabilities': 'क्षमता',
+    'landing.journey': '12-टप्प्यांचा प्रवास',
+    'landing.compliance': 'ईयू आणि यूएस नियम',
+    'landing.costSimulator': 'खर्च सिम्युलेटर',
+
     // Dashboard
     'dash.title': 'निर्यात नियंत्रण केंद्र',
     'dash.subtitle': 'भारतीय एमएसएमई निर्यातदारांसाठी डीजीएफटी व सीमाशुल्क अनुपालन',
@@ -260,5 +344,27 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
 
 export function getTranslation(lang: SupportedLanguage, key: string, fallback?: string): string {
   const dictionary = translations[lang] || translations.en;
-  return dictionary[key] || translations.en[key] || fallback || key;
+  
+  // Mapping key variations to ensure translation lookup matches regardless of key format used in components
+  const normalizedKeyMap: Record<string, string> = {
+    'dashboard': 'nav.dashboard',
+    'readinessScore': 'nav.readiness',
+    'readiness': 'nav.readiness',
+    'roadmap': 'nav.roadmap',
+    'documentVault': 'nav.documents',
+    'documents': 'nav.documents',
+    'logisticsCHA': 'nav.logistics',
+    'logistics': 'nav.logistics',
+    'costEstimator': 'nav.cost',
+    'cost': 'nav.cost',
+    'riskRadar': 'nav.risk',
+    'risk': 'nav.risk',
+    'copilot': 'nav.copilot',
+    'rolePortal': 'nav.role_management',
+    'role_management': 'nav.role_management',
+    'newConsignment': 'header.newConsignment',
+  };
+
+  const targetKey = normalizedKeyMap[key] || key;
+  return dictionary[targetKey] || dictionary[key] || translations.en[targetKey] || translations.en[key] || fallback || key;
 }

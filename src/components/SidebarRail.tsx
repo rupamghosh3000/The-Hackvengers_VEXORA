@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 
 export const SidebarRail: React.FC = () => {
-  const { currentView, setCurrentView, user, setIsCopilotDrawerOpen } = useApp();
+  const { currentView, setCurrentView, user, setIsCopilotDrawerOpen, t } = useApp();
 
   const railItems: { view: AppView; label: string; icon: React.FC<{ className?: string }>; badge?: string }[] = [
     { view: 'dashboard', label: 'Dashboard', icon: LayoutGrid },
@@ -55,6 +55,7 @@ export const SidebarRail: React.FC = () => {
           {railItems.map((item) => {
             const Icon = item.icon;
             const isActive = currentView === item.view;
+            const translatedLabel = t(item.view, item.label);
             return (
               <button
                 key={item.view}
@@ -64,7 +65,7 @@ export const SidebarRail: React.FC = () => {
                     ? 'bg-teal-800 text-teal-100 shadow-inner' 
                     : 'text-stone-400 hover:text-stone-100 hover:bg-stone-800'
                 }`}
-                title={item.label}
+                title={translatedLabel}
               >
                 <Icon className="w-5 h-5" />
                 {item.badge && (
@@ -76,7 +77,7 @@ export const SidebarRail: React.FC = () => {
                 )}
                 {/* Floating tooltip */}
                 <span className="absolute left-full ml-3 px-2 py-1 rounded bg-stone-800 text-white text-[11px] font-medium whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition z-50 shadow-md">
-                  {item.label}
+                  {translatedLabel}
                 </span>
               </button>
             );
